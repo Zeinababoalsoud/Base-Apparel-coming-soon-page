@@ -1,0 +1,116 @@
+#maincontainer{
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../src/assets/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+#content{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 25px;
+}
+
+label{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5cap;
+    
+}
+#lab1{
+    color:hsl(0, 36%, 70%);
+    font-family: "Josefin Sans", sans-serif;
+}
+.lab2{
+    font-weight: bold;
+}
+p{
+    font-weight: bold;
+    color:hsl(0, 36%, 70%);
+}
+
+#inputBtn{
+    display: flex;
+    width: 100%;
+    height: 8%;
+}
+button{
+    border: none;
+    width:15%;
+    position: relative;
+    right: 5%;
+    border-radius: 50px;
+    height: 100%;
+    background-color: hsl(0, 36%, 70%);;
+}
+button:hover{
+    cursor: pointer;
+}
+#in{
+    width:85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: transparent;
+    padding:10px;
+    box-sizing: border-box;
+    
+}
+::placeholder{
+    color:hsl(0, 27%, 74%);
+    font-weight: bold;
+}
+#hiddenImg{
+    display:none;
+    width:100%;
+}
+@media only screen and (max-width: 700px) {
+    #maincontainer{
+        display:flex;
+    }
+    #content{
+        justify-content: center;
+        align-items:center ;
+        row-gap: 20px;
+        width:100%;
+    }
+    #content >p{
+        text-align: center;
+        width:90%;
+    }
+    label{
+        font-size: 30px;
+    }
+    #inputBtn{
+        height:15%;
+        width:90%;
+    }
+    button,input{
+        height: 100%;
+        padding:10px;
+    }
+    button{
+        padding: 5px;
+    }
+    #maincontainer{
+        background-image: none;
+        width:100%;
+        height: auto;
+        flex-direction: column;
+        row-gap: 10%;
+
+    }
+    #hiddenImg{
+        display:flex;
+    }
+} 
